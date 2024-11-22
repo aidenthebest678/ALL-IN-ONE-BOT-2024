@@ -6,22 +6,22 @@ module.exports = {
         .setName('support')
         .setDescription(lang.supportDescription),
     async execute(interaction) {
-        const supportServerLink = 'https://discord.gg/N9zVN7nGNP'; // Updated Discord invite link
+        const supportServerLink = 'https://discord.gg/Ssdpj6X3vX';
 
         const embed = new EmbedBuilder()
-            .setColor('#b300ff') // Embed color
+            .setColor('#b300ff')
             .setAuthor({
                 name: lang.supportTitle,
                 iconURL: lang.supportIconURL,
-                url: supportServerLink, // Clickable author name linking to Discord invite
+                url: supportServerLink
             })
             .setDescription(`
                 ➡️ **${lang.supportDescriptionTitle}:**
                 - ${lang.discord} - ${supportServerLink}
             `)
-            .setImage(lang.supportImageURL) // Optional image (from language file)
-            .setTimestamp(); // Adds a timestamp at the bottom of the embed
+            .setImage('https://share.creavite.co/673fc815b23406fceac14ea2.png')
+            .setTimestamp();
 
-        await interaction.reply({ embeds: [embed] }); // Sends the embed as a reply
+        await interaction.reply({ embeds: [embed] });
     },
 };
