@@ -6,7 +6,7 @@ module.exports = {
         .setName('support')
         .setDescription(lang.supportDescription),
     async execute(interaction) {
-        const supportServerLink = 'https://discord.gg/Ssdpj6X3vX';
+        const supportServerLink = 'https://discord.gg/N9zVN7nGNP';
 
         const embed = new EmbedBuilder()
             .setColor('#b300ff')
@@ -19,7 +19,7 @@ module.exports = {
                 ➡️ **${lang.supportDescriptionTitle}:**
                 - ${lang.discord} - ${supportServerLink}
             `)
-            .setImage('https://share.creavite.co/673fc815b23406fceac14ea2.png')
+            .setImage('https://share.creavite.co/673fc998b23406fceac14ea5.png')
             .setTimestamp();
 
         await interaction.reply({ embeds: [embed] });
